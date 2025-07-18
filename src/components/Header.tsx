@@ -17,8 +17,9 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-primary">
-            Prof. B.B Sahu
+          <div className="text-xl font-bold text-primary">
+            <div>Nuclear Physics Lab</div>
+            <div className="text-sm font-medium text-muted-foreground">KIIT University</div>
           </div>
           
           {/* Desktop Navigation */}
