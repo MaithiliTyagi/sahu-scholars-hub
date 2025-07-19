@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { GraduationCap, Award, BookOpen, Users } from 'lucide-react';
+import profPhoto from '@/assets/prof-bb-sahu.jpg';
 
 const About = () => {
   const achievements = [
@@ -38,32 +39,47 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div>
-            <h3 className="text-2xl font-semibold mb-6 text-foreground">Research Focus</h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Professor B.B Sahu's research encompasses cutting-edge developments in his field, 
-              contributing significantly to both theoretical understanding and practical applications. 
-              His work bridges the gap between academic research and real-world solutions.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              With a commitment to excellence and innovation, Professor Sahu continues to push 
-              the boundaries of knowledge while fostering an environment of learning and discovery 
-              for students and fellow researchers.
-            </p>
+        <div className="grid md:grid-cols-3 gap-12 items-center mb-16">
+          <div className="md:col-span-1 flex justify-center">
+            <div className="relative">
+              <img 
+                src={profPhoto}
+                alt="Professor B.B Sahu"
+                className="w-64 h-64 rounded-full object-cover shadow-card-hover border-4 border-primary/20"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-transparent"></div>
+            </div>
           </div>
           
-          <div>
-            <h3 className="text-2xl font-semibold mb-6 text-foreground">Academic Philosophy</h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Believing in the transformative power of education, Professor Sahu emphasizes 
-              critical thinking, collaborative research, and the practical application of knowledge 
-              to address contemporary challenges.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              His approach combines rigorous academic standards with innovative teaching methods, 
-              creating an engaging environment that encourages students to explore, question, and discover.
-            </p>
+          <div className="md:col-span-2 space-y-8">
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-foreground">Research Focus</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Professor B.B Sahu's research encompasses cutting-edge developments in nuclear physics, 
+                contributing significantly to both theoretical understanding and practical applications. 
+                His work bridges the gap between academic research and real-world solutions in nuclear science.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                With a commitment to excellence and innovation, Professor Sahu continues to push 
+                the boundaries of nuclear physics while fostering an environment of learning and discovery 
+                for students and fellow researchers.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-foreground">Academic Philosophy</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Believing in the transformative power of education, Professor Sahu emphasizes 
+                critical thinking, collaborative research, and the practical application of nuclear physics 
+                to address contemporary challenges in energy and technology.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                His approach combines rigorous academic standards with innovative teaching methods, 
+                creating an engaging environment that encourages students to explore, question, and discover 
+                the mysteries of atomic and nuclear phenomena.
+              </p>
+            </div>
           </div>
         </div>
 

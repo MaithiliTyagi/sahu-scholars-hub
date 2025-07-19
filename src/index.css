@@ -38,9 +38,9 @@ All colors MUST be HSL.
     --ring: 215 100% 50%;
 
     /* Academic design tokens */
-    --academic-blue: 215 100% 50%;
+    --academic-blue: 215 100% 35%;
     --academic-blue-light: 215 100% 95%;
-    --academic-navy: 215 100% 25%;
+    --academic-navy: 215 100% 15%;
     --academic-gold: 45 100% 50%;
     --academic-gray: 215 16% 46%;
     
