@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { FileText, Users, Mail, Atom, Zap, Radio } from 'lucide-react';
 import { Suspense, lazy } from 'react';
+import kiitCampus from '@/assets/kiit-campus.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -11,7 +12,18 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={kiitCampus}
+          alt="KIIT University Campus"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-academic-navy/80 via-academic-blue/60 to-background/70"></div>
+      </div>
+      
       {/* Quantum Background Effects */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-20 left-20 w-32 h-32 bg-quantum-glow/10 rounded-full blur-xl animate-quantum-float"></div>
